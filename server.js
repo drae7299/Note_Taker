@@ -1,15 +1,17 @@
-//Global const, also required routes and express
 const express = require('express');
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
-//initializing the app and express, created port
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
+
+// Initialize the app and create a port
 const app = express();
-const PORT = preocess.env.PORT || 3000;
-// Setup middle ware and other brick and mortar, giving acess to routes and static html
+const PORT = process.env.PORT || 3000;
+
+// Set up body parsing, static, and route middleware
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use("/api" , apiRoutes);
-app.use("/" , htmlRoutes);
-//Starting the server and printing out log
-app.listen(PORT, () => console.log(`Listening to PORT: ${PORT}`));
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
+
+// Start the server on the port
+app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
