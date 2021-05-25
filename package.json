@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/drae7299/Note_Taker/issues"
   },
-  "homepage": "https://github.com/drae7299/Note_Taker#readme"
+  "homepage": "https://github.com/drae7299/Note_Taker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "start": "^5.1.0",
+    "uuid": "^8.3.2"
+  }
 }
