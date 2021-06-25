@@ -42,6 +42,6 @@
 
   Email: drae7299@gmail.com
 
-  [Deployed Application](https://drae7299.github.io/Note_Taker/)
+  [Deployed Application](https://gentle-crag-05153.herokuapp.com/)
   
 
